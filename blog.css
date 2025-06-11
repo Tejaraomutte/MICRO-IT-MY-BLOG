@@ -1,0 +1,232 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(45deg, #ff758c);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  color: #3a3a3a;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav button {
+  background: #ff758c;
+  background: linear-gradient(45deg, #b31c60);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255,117,140,0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+nav button:hover {
+  background: linear-gradient(45deg, #ff5fa1, #ff416c);
+  box-shadow: 0 6px 16px rgba(255,81,113,0.7);
+}
+
+
+.section {
+  background: white;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 30px 30px 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  color: #444;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.post {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.post:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post h3 {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #ff416c;
+  font-size: 1.8rem;
+}
+
+.post .meta {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.post img {
+  height:300px;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255,81,113,0.3);
+  margin: 10px 0 20px 0;
+  user-select: none;
+}
+
+.post p {
+  line-height: 1.55;
+  font-size: 1.1rem;
+}
+
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.comments input:focus {
+  border-color: #ff416c;
+  outline: none;
+}
+
+.comments button {
+  padding: 10px 18px;
+  margin-left: 12px;
+  border-radius: 24px;
+  border: none;
+  background: #ff416c;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.comments button:hover {
+  background: #ff1e50;
+}
+
+.comment-list {
+  margin-top: 15px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.comment-list li {
+  background: #ffe3ec;
+  margin-bottom: 8px;
+  padding: 10px 18px;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  color: #7a1a3e;
+  user-select: none;
+}
+
+
+.form-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1.5px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #ff416c;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+button.post-blog {
+  background: #ff758c;
+  background: linear-gradient(45deg, #ff7eb9, #ff758c);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  padding: 14px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(255,117,140,0.6);
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+button.post-blog:hover {
+  background: linear-gradient(45deg, #ff5fa1, #ff416c);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto;
+  background: #ff416c;
+  background: linear-gradient(45deg, #ff758c, #ff416c);
+  color: white;
+  font-weight: 600;
+  user-select: none;
+  letter-spacing: 1px;
+}
